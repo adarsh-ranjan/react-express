@@ -7,7 +7,7 @@
     "client-install": "cd client && npm install",
     "client": "npm start --prefix client",
     "server": "nodemon bin/www",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"nodemon start\" \"npm run client\"",
     "build": "npm run build --prefix client"
   },
   "dependencies": {

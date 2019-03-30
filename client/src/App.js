@@ -10,7 +10,7 @@ class App extends Component {
     }
   }
   componentDidMount(){
-    axios.get('/users/users').then(users=> {
+    axios.get('http://loacalhost:3001/users/users').then(users=> {
       console.log(users);
       this.setState({users:users.data})})
   }
